@@ -216,9 +216,19 @@
             // numericUpDown_frequency_from
             // 
             this.numericUpDown_frequency_from.Location = new System.Drawing.Point(71, 44);
+            this.numericUpDown_frequency_from.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown_frequency_from.Name = "numericUpDown_frequency_from";
             this.numericUpDown_frequency_from.Size = new System.Drawing.Size(66, 20);
             this.numericUpDown_frequency_from.TabIndex = 127;
+            this.numericUpDown_frequency_from.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown_frequency_from.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // label5
@@ -233,6 +243,8 @@
             // 
             // chart1
             // 
+            chartArea1.AxisX.IsLogarithmic = true;
+            chartArea1.AxisY.IsLogarithmic = true;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";

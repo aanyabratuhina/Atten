@@ -131,6 +131,7 @@
             0,
             0,
             0});
+            this.numericUpDown_tilt_angle.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // numericUpDown_track_angle
             // 
@@ -143,6 +144,7 @@
             0,
             0,
             0});
+            this.numericUpDown_track_angle.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // numericUpDown_IntensityOfTheRain
             // 
@@ -155,6 +157,7 @@
             0,
             0,
             0});
+            this.numericUpDown_IntensityOfTheRain.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // label10
             // 
@@ -208,6 +211,7 @@
             0,
             0,
             0});
+            this.numericUpDown_frequency_to.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // numericUpDown_frequency_from
             // 
@@ -215,6 +219,7 @@
             this.numericUpDown_frequency_from.Name = "numericUpDown_frequency_from";
             this.numericUpDown_frequency_from.Size = new System.Drawing.Size(66, 20);
             this.numericUpDown_frequency_from.TabIndex = 127;
+            this.numericUpDown_frequency_from.ValueChanged += new System.EventHandler(this.Culc);
             // 
             // label5
             // 
@@ -268,6 +273,7 @@
             this.Controls.Add(this.chart1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Culc);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_tilt_angle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_track_angle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_IntensityOfTheRain)).EndInit();

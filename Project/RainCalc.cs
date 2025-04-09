@@ -88,6 +88,7 @@ namespace Project
             var osl = k * Math.Pow(R, a);
 
             return osl;
+
         }
     }
 }
